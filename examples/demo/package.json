@@ -11,12 +11,12 @@
   "dependencies": {
     "@activewidgets/examples": "*",
     "@activewidgets/html": "*",
-    "@activewidgets/options": "*"
+    "@activewidgets/options": "*",
+    "svelte": "^3"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12",
-    "parcel-plugin-svelte": "^4",
-    "svelte": "^3"
+    "parcel-plugin-svelte": "^4"
   },
   "private": true
 }
