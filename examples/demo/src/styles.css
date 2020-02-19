@@ -1,0 +1,116 @@
+/**
+ * Copyright (c) ActiveWidgets SARL. All Rights Reserved.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+body {
+    margin: 60px;
+    font: 14px/1.2143 'Segoe UI', 'Avenir', 'Helvetica Neue', 'Tahoma', sans-serif;
+}
+
+
+.ax-datagrid {
+    height: calc(100vh - 120px);
+    min-height: 400px;
+}
+
+.ax-headers-view {
+    font-weight: bold;
+    color: #666;
+    border-bottom: 1px solid #aaa;
+}
+
+.ax-gridlines {
+    border-bottom: 1px solid #eee;
+}
+
+.ax-cell:hover {
+    background: rgba(0,127,255,0.1);
+}
+
+.ax-cell > div {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ax-cell > img {
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+    margin: 0px 10px;
+}
+
+.small {
+    font-size: 13px;
+    line-height: 1.308;
+    color: #444;
+}
+
+.bold {
+    font-weight: bold;
+    color: #666;
+}
+
+.blue {
+    color: #369;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.phone:before {
+    content: '\260E';
+    color: #666;
+    margin-right: 10px;
+}
+
+.fax:before {
+    content: 'fax';
+    color: #666;
+    margin-right: 10px;
+    font-size: 11px;
+}
+
+.circle {
+    position: relative;
+    overflow: visible;
+}
+
+.circle span {
+    font-weight: bold;
+    color: #900;
+}
+
+.circle:after {
+    content: '';
+    position: absolute;
+    top: -15px;
+    bottom: -15px;
+    left: -30px;
+    width: 180px;
+    border: 2px dotted red;
+    border-radius: 100px;
+    background: rgba(255, 0, 0, 0.03);
+}
+
+
+.star .small {
+    overflow: visible;
+}
+
+.star .small:after {
+    content: '\2605';
+    display: inline-block;
+    margin: -1em 5px;
+    font-size: 2em;
+    color: #fb0;
+    text-shadow: 1px 1px 2px #333;
+    vertical-align: -3px;
+}
+
+.bg-green {
+    background: rgba(0, 255, 0, 0.05);
+}

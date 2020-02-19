@@ -1,0 +1,19 @@
+{
+  "name": "jquery-hello-world",
+  "version": "1.0.0",
+  "description": "Hello World - ActiveWidgets/jQuery",
+  "license": "MIT",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
+  },
+  "dependencies": {
+    "@activewidgets/jquery": "*",
+    "jquery": "*"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1"
+  },
+  "private": true
+}

@@ -1,0 +1,21 @@
+{
+  "name": "jquery-demo",
+  "version": "1.0.0",
+  "description": "Demo - ActiveWidgets/jQuery",
+  "license": "MIT",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
+  },
+  "dependencies": {
+    "@activewidgets/examples": "*",
+    "@activewidgets/jquery": "*",
+    "@activewidgets/options": "*",
+    "jquery": "*"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1"
+  },
+  "private": true
+}

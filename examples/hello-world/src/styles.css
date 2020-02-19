@@ -1,0 +1,24 @@
+/**
+ * Copyright (c) ActiveWidgets SARL. All Rights Reserved.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+body {
+    margin: 60px;
+    font: 14px/1.2143 'Segoe UI', 'Avenir', 'Helvetica Neue', 'Tahoma', sans-serif;
+}
+
+.ax-datagrid {
+    max-height: 80px;
+}
+
+.ax-headers-view {
+    font-weight: bold;
+    color: #666;
+    border-bottom: 1px solid #aaa;
+}
+
+.ax-gridlines {
+    border-bottom: 1px solid #eee;
+}
