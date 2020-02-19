@@ -1,17 +1,16 @@
 {
-  "name": "jquery-events",
+  "name": "svelte-events",
   "version": "1.0.0",
-  "description": "User events - ActiveWidgets/jQuery",
+  "description": "User events - ActiveWidgets/Svelte",
   "license": "MIT",
-  "main": "src/index.js",
+  "main": "src/main.js",
   "scripts": {
     "start": "parcel index.html --open",
     "build": "parcel build index.html"
   },
   "dependencies": {
     "@activewidgets/examples": "*",
-    "@activewidgets/jquery": "*",
-    "jquery": "*"
+    "@activewidgets/html": "*"
   },
   "devDependencies": {
     "parcel-bundler": "^1"

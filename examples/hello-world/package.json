@@ -1,16 +1,15 @@
 {
-  "name": "jquery-hello-world",
+  "name": "svelte-hello-world",
   "version": "1.0.0",
-  "description": "Hello World - ActiveWidgets/jQuery",
+  "description": "Hello World - ActiveWidgets/Svelte",
   "license": "MIT",
-  "main": "src/index.js",
+  "main": "src/main.js",
   "scripts": {
     "start": "parcel index.html --open",
     "build": "parcel build index.html"
   },
   "dependencies": {
-    "@activewidgets/jquery": "*",
-    "jquery": "*"
+    "@activewidgets/html": "*"
   },
   "devDependencies": {
     "parcel-bundler": "^1"

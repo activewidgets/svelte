@@ -1,18 +1,17 @@
 {
-  "name": "jquery-demo",
+  "name": "svelte-demo",
   "version": "1.0.0",
-  "description": "Demo - ActiveWidgets/jQuery",
+  "description": "Demo - ActiveWidgets/Svelte",
   "license": "MIT",
-  "main": "src/index.js",
+  "main": "src/main.js",
   "scripts": {
     "start": "parcel index.html --open",
     "build": "parcel build index.html"
   },
   "dependencies": {
     "@activewidgets/examples": "*",
-    "@activewidgets/jquery": "*",
-    "@activewidgets/options": "*",
-    "jquery": "*"
+    "@activewidgets/html": "*",
+    "@activewidgets/options": "*"
   },
   "devDependencies": {
     "parcel-bundler": "^1"
