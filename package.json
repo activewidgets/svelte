@@ -12,7 +12,7 @@
     "@activewidgets/examples": "0.0.6",
     "@activewidgets/html": "3.0.0",
     "@activewidgets/options": "3.0.0",
-    "svelte": "^3.0.0"
+    "svelte": "^3"
   },
   "devDependencies": {
     "@babel/core": "^7",

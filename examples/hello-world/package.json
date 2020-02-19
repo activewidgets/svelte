@@ -12,7 +12,9 @@
     "@activewidgets/html": "*"
   },
   "devDependencies": {
-    "parcel-bundler": "^1"
+    "parcel-bundler": "^1.12",
+    "parcel-plugin-svelte": "^4",
+    "svelte": "^3"
   },
   "private": true
 }
