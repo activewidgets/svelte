@@ -6,7 +6,7 @@
 
 <script>
 
-import '@activewidgets/html';
+import { Datagrid } from '@activewidgets/svelte';
 import { columns, rows } from "@activewidgets/examples/data";
 import './styles.css';
 
@@ -17,4 +17,4 @@ function onMouse({row}){
 
 </script>
 
-<ax-datagrid {columns} {rows} on:mouse={e => onMouse(e.detail)}></ax-datagrid>
+<Datagrid {columns} {rows} on:mouse={e => onMouse(e.detail)} />

@@ -1,32 +1,91 @@
 {
   "name": "@activewidgets/svelte",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Datagrid component for Svelte",
   "author": "ActiveWidgets SARL",
   "license": "MIT",
+  "main": "./dist/umd/package.js",
+  "module": "./dist/esm/package.js",
+  "files": [
+    "dist/*/*.*",
+    "*/package.json",
+    "LICENSE",
+    "README.md"
+  ],
   "scripts": {
-    "output": "rimraf out/* && build-examples",
-    "start": "serve-examples"
+    "build": "rimraf dist/* && rollup -c && node rewrite-map.js",
+    "output": "npm run build && rimraf out/* && rollup -c rollup.examples.js",
+    "prepack": "npm run build && rimraf out/*",
+    "serve": "sirv out",
+    "start": "rollup -w -c rollup.examples.js",
+    "test": "npm run output && jest"
   },
   "dependencies": {
-    "@activewidgets/examples": "0.0.6",
-    "@activewidgets/html": "3.0.0",
-    "@activewidgets/options": "3.0.0",
-    "svelte": "^3"
+    "@activewidgets/datagrid": "3.0.1",
+    "@activewidgets/frameworks": "3.0.1"
+  },
+  "peerDependencies": {
+    "svelte": "^3.15"
   },
   "devDependencies": {
+    "@activewidgets/examples": "0.0.6",
+    "@activewidgets/options": "3.0.1",
+    "@activewidgets/puppeteer": "0.0.4",
+    "@activewidgets/testing": "0.0.3",
     "@babel/core": "^7",
     "@babel/preset-env": "^7",
-    "express": "^4",
-    "marked": "^0.8",
-    "opn": "^5",
-    "parcel-bundler": "^1.12",
-    "parcel-plugin-svelte": "^4",
-    "postcss-import": "^12",
-    "rimraf": "^3"
+    "@rollup/plugin-alias": "^3",
+    "@rollup/plugin-json": "^4",
+    "@rollup/plugin-node-resolve": "^6",
+    "rimraf": "^3",
+    "rollup": "^1.20",
+    "rollup-plugin-babel": "^4",
+    "rollup-plugin-commonjs": "^10",
+    "rollup-plugin-copy": "^3",
+    "rollup-plugin-img": "^1",
+    "rollup-plugin-livereload": "^1",
+    "rollup-plugin-md": "^0.0.7",
+    "rollup-plugin-postcss": "^2",
+    "rollup-plugin-sourcemaps": "^0.4",
+    "rollup-plugin-svelte": "^5",
+    "rollup-plugin-terser": "^5",
+    "sirv-cli": "^0.4",
+    "style-inject": "^0.3",
+    "svelte": "^3.15"
   },
   "browserslist": [
-    "last 1 chrome versions"
+    "ie 11"
   ],
-  "private": true
+  "alias": {
+    "@activewidgets/svelte": "./"
+  },
+  "jest": {
+    "projects": [
+      {
+        "displayName": "Unit",
+        "preset": "@activewidgets/testing",
+        "moduleNameMapper": {
+          "@activewidgets/components": "<rootDir>/js",
+          "@activewidgets/testing": "<rootDir>/test/adapter/svelte.js"
+        }
+      },
+      {
+        "displayName": "Visual",
+        "preset": "@activewidgets/puppeteer"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/activewidgets/svelte.git"
+  },
+  "keywords": [
+    "activewidgets",
+    "datagrid",
+    "svelte"
+  ],
+  "bugs": {
+    "url": "https://github.com/activewidgets/svelte/issues"
+  },
+  "homepage": "https://activewidgets.com"
 }

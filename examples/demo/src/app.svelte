@@ -1,16 +1,10 @@
-<!--
-   Copyright (c) ActiveWidgets SARL. All Rights Reserved.
-   This source code is licensed under the MIT license found in the
-   LICENSE file in the root directory of this source tree.
- -->
-
 <script>
-
-import '@activewidgets/html';
-import { northwind } from '@activewidgets/examples/data';
-import * as templates from './templates';
-import options from './options';
 import './styles.css';
+import { Datagrid } from '@activewidgets/svelte';
+import { northwind } from '@activewidgets/examples/data';
+import * as flags from '@activewidgets/examples/flags';
+import options from './options';
+
 
 const columns = [
     { header: 'Company', template: 'company', fixed: true },
@@ -25,7 +19,6 @@ const columns = [
 
 const rows = northwind.customers;
 
-
 function onRow(row){
 
     const {data, cells} = row;
@@ -36,20 +29,47 @@ function onRow(row){
 
 
     // dynamic row style
-    if (data.country === 'France'){
+    if (data.country == 'France'){
         row.class = 'bg-green';
     }
 
     // dynamic cell styles
-    if (data.city === 'London'){
+    if (data.city == 'London'){
         cells.address = {class: 'circle'};
     }
 
-    if (data.contactTitle === 'Owner'){
+    if (data.contactTitle == 'Owner'){
         cells.contact = {class: 'star'};
     }
 }
 
 </script>
 
-<ax-datagrid {columns} {rows} {templates} {options} on:row={e => onRow(e.detail)}></ax-datagrid>
+
+<Datagrid {columns} {rows} {options} {onRow}>
+
+    <div slot="company" let:data>
+        <div class="bold blue">{data.customerID}</div>
+        <div class="small">{data.companyName}</div>
+    </div>
+
+    <div slot="contact" let:data>
+        <div class="bold">{data.contactName}</div>
+        <div class="small">{data.contactTitle}</div>
+    </div>
+
+    <div slot="address" let:data>
+        <div class="small">{data.address}</div>
+        <div class="small">{data.postalCode} <span>{data.city}</span></div>
+    </div>
+
+    <div slot="country" let:text>
+        <img src={flags[text]} alt={text} />{text}
+    </div>
+
+    <div slot="phone" let:data>
+        <div class="small phone">{data.phone}</div>
+        <div class="small fax">{data.fax}</div>
+    </div>
+
+</Datagrid>

@@ -6,7 +6,7 @@
 
 <script>
 
-import '@activewidgets/html';
+import { Datagrid } from '@activewidgets/svelte';
 import { northwind } from "@activewidgets/examples/data";
 import './styles.css';
 
@@ -28,4 +28,4 @@ const rows = northwind.customers;
 
 </script>
 
-<ax-datagrid {columns} {rows}></ax-datagrid>
+<Datagrid {columns} {rows} />

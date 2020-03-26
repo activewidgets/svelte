@@ -1,0 +1,6 @@
+{
+  "name": "@activewidgets/svelte/css",
+  "main": "../dist/umd/css.js",
+  "module": "../dist/esm/css.js",
+  "private": true
+}

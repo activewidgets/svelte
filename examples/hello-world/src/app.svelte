@@ -6,7 +6,7 @@
 
 <script>
 
-import '@activewidgets/html';
+import { Datagrid } from '@activewidgets/svelte';
 import './styles.css';
 
 let rows = [
@@ -15,4 +15,4 @@ let rows = [
 
 </script>
 
-<ax-datagrid {rows}></ax-datagrid>
+<Datagrid {rows} />
