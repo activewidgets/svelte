@@ -37,6 +37,7 @@
     "@rollup/plugin-alias": "^3",
     "@rollup/plugin-json": "^4",
     "@rollup/plugin-node-resolve": "^6",
+    "@testing-library/svelte": "^3",
     "rimraf": "^3",
     "rollup": "^1.20",
     "rollup-plugin-babel": "^4",
@@ -53,14 +54,29 @@
     "style-inject": "^0.3",
     "svelte": "^3.15"
   },
-  "browserslist": [
-    "ie 11"
-  ],
-  "alias": {
-    "@activewidgets/svelte": "./"
-  },
   "jest": {
     "projects": [
+      {
+        "displayName": "Unit",
+        "preset": "@activewidgets/testing",
+        "moduleNameMapper": {
+          "@activewidgets/components": "<rootDir>/js",
+          "@activewidgets/testing": "<rootDir>/test/adapter/svelte.js"
+        },
+        "transformIgnorePatterns": [
+          "/node_modules/(?!(svelte|@activewidgets)/)"
+        ],
+        "transform": {
+          "\\.js$": [
+            "babel-jest",
+            {
+              "presets": [
+                "@babel/preset-env"
+              ]
+            }
+          ]
+        }
+      },
       {
         "displayName": "Visual",
         "preset": "@activewidgets/puppeteer"
