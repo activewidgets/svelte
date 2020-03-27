@@ -8,7 +8,6 @@
 
 import { Datagrid } from '@activewidgets/svelte';
 import { columns, rows } from "@activewidgets/examples/data";
-import './styles.css';
 
 
 function onMouse({row}){

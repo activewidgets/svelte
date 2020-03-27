@@ -70,7 +70,10 @@ export default {
         }),
 
         copy({
-          targets: [{ src: 'examples/**/index.html', dest: 'out' }],
+          targets: [
+            { src: 'examples/**/index.html', dest: 'out' },
+            { src: 'examples/**/styles.css', dest: 'out' }
+          ],
           flatten: false
         }),
 

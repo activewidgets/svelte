@@ -62,14 +62,6 @@
   "jest": {
     "projects": [
       {
-        "displayName": "Unit",
-        "preset": "@activewidgets/testing",
-        "moduleNameMapper": {
-          "@activewidgets/components": "<rootDir>/js",
-          "@activewidgets/testing": "<rootDir>/test/adapter/svelte.js"
-        }
-      },
-      {
         "displayName": "Visual",
         "preset": "@activewidgets/puppeteer"
       }
