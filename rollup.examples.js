@@ -2,7 +2,6 @@ import resolve from '@rollup/plugin-node-resolve';
 import alias from '@rollup/plugin-alias';
 import json from '@rollup/plugin-json';
 import svelte from 'rollup-plugin-svelte';
-import babel from 'rollup-plugin-babel';
 import copy from 'rollup-plugin-copy';
 import image from 'rollup-plugin-img';
 import commonjs from 'rollup-plugin-commonjs';
@@ -62,12 +61,6 @@ export default {
         alias({entries: {
             '@activewidgets/svelte': __dirname
         }}),
-
-        babel({
-            babelrc: false,
-            exclude: ['node_modules/!svelte/**'],
-            presets: [["@babel/env", {targets: {ie: 11}}]]
-        }),
 
         copy({
           targets: [

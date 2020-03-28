@@ -62,19 +62,6 @@
         "moduleNameMapper": {
           "@activewidgets/components": "<rootDir>/js",
           "@activewidgets/testing": "<rootDir>/test/adapter/svelte.js"
-        },
-        "transformIgnorePatterns": [
-          "/node_modules/(?!(svelte|@activewidgets)/)"
-        ],
-        "transform": {
-          "\\.js$": [
-            "babel-jest",
-            {
-              "presets": [
-                "@babel/preset-env"
-              ]
-            }
-          ]
         }
       },
       {
