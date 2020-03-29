@@ -8,6 +8,7 @@
 
 import { Datagrid } from '@activewidgets/svelte';
 import { northwind } from "@activewidgets/examples/data";
+import './styles.css';
 
 
 const columns = [

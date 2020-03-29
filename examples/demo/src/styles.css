@@ -9,7 +9,7 @@ body {
     font: 14px/1.2143 'Segoe UI', 'Avenir', 'Helvetica Neue', 'Tahoma', sans-serif;
 }
 
-div.ax-datagrid {
+.ax-datagrid {
     height: calc(100vh - 120px);
     min-height: 400px;
 }
@@ -73,7 +73,7 @@ div.ax-datagrid {
     font-size: 11px;
 }
 
-div.circle {
+.circle {
     position: relative;
     overflow: visible;
 }

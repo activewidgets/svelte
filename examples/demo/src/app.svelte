@@ -3,6 +3,7 @@ import { Datagrid } from '@activewidgets/svelte';
 import { northwind } from '@activewidgets/examples/data';
 import * as flags from '@activewidgets/examples/flags';
 import options from './options';
+import './styles.css';
 
 
 const columns = [

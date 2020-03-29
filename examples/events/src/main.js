@@ -7,7 +7,8 @@
 import App from './app.svelte';
 
 var app = new App({
-    target: document.body
+    target: document.body,
+    anchor: document.body.firstElementChild
 });
 
 export default app;
