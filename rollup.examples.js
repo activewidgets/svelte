@@ -8,6 +8,7 @@ import commonjs from 'rollup-plugin-commonjs';
 import livereload from 'rollup-plugin-livereload';
 import markdown from 'rollup-plugin-md';
 import postcss from 'rollup-plugin-postcss';
+import sourcemaps from 'rollup-plugin-sourcemaps';
 import { terser } from 'rollup-plugin-terser';
 
 const production = !process.env.ROLLUP_WATCH;
@@ -36,6 +37,7 @@ export default {
         json (),
         image({limit: 100000}),
         markdown(),
+        sourcemaps(),
 
         svelte({
             dev: !production,
