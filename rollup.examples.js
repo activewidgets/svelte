@@ -57,7 +57,8 @@ export default {
 
         copy({
           targets: [{ src: 'examples/**/index.html', dest: 'out' }],
-          flatten: false
+          flatten: false,
+          copyOnce: true
         }),
 
         !production && serve(),
@@ -82,6 +83,8 @@ function serve() {
                     stdio: ['ignore', 'inherit', 'inherit'],
                     shell: true
                 });
+
+                require('opn')('http://localhost');
             }
         }
     };

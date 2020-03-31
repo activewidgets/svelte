@@ -16,7 +16,7 @@
     "build": "rimraf dist/* && rollup -c && node rewrite-map.js",
     "output": "npm run build && rimraf out/* && rollup -c rollup.examples.js",
     "prepack": "npm run build && rimraf out/*",
-    "serve": "sirv out",
+    "serve": "sirv out --port 80 --single",
     "start": "rollup -w -c rollup.examples.js",
     "test": "npm run output && jest"
   },
@@ -38,6 +38,7 @@
     "@rollup/plugin-json": "^4",
     "@rollup/plugin-node-resolve": "^6",
     "@testing-library/svelte": "^3",
+    "opn": "^5",
     "rimraf": "^3",
     "rollup": "^1.20",
     "rollup-plugin-babel": "^4",
