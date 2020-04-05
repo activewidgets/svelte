@@ -1,5 +1,5 @@
 
-[Open fullscreen](https://svelte.activewidgets.com/demo/) | [Source on github](https://github.com/activewidgets/svelte/tree/master/examples/demo) | [Edit on Codesandbox](https://codesandbox.io/s/fgqbx)
+[Open fullscreen](/demo/) | [Source on github](https://github.com/activewidgets/svelte/tree/master/examples/demo) | [Edit on Codesandbox](https://codesandbox.io/s/fgqbx)
 
 This is a simple demo showing some of the features of ActiveWidgets/Svelte datagrid -
 

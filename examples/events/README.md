@@ -1,5 +1,5 @@
 
-[Open fullscreen](https://svelte.activewidgets.com/events/) | [Source on github](https://github.com/activewidgets/svelte/tree/master/examples/events) | [Edit on Codesandbox](https://codesandbox.io/s/cdy4k)
+[Open fullscreen](/events/) | [Source on github](https://github.com/activewidgets/svelte/tree/master/examples/events) | [Edit on Codesandbox](https://codesandbox.io/s/cdy4k)
 
 The datagrid emits composite [mouse](https://docs.activewidgets.com/api/datagrid/mouse-event/) event 
 which makes it easier to find the elements affected by the user action -
