@@ -22,7 +22,7 @@ export default {
         'viewer': 'examples/viewer/main.js'
     },
     output: {
-        chunkFileNames: 'build/[name].js',
+        chunkFileNames: 'viewer/build/[name].js',
         entryFileNames: '[name]/build/bundle.js',
         sourcemap: true,
         name: 'app',
