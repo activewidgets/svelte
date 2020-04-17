@@ -5,16 +5,24 @@
   "license": "MIT",
   "main": "src/main.js",
   "scripts": {
-    "start": "parcel index.html --open",
-    "build": "parcel build index.html"
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "start": "rollup -c && sirv"
   },
   "dependencies": {
-    "@activewidgets/html": "*",
-    "svelte": "^3"
-},
+    "@activewidgets/svelte": "^3",
+    "svelte": "^3.15"
+  },
   "devDependencies": {
-    "parcel-bundler": "^1.12",
-    "parcel-plugin-svelte": "^4"
+    "@rollup/plugin-commonjs": "^11",
+    "@rollup/plugin-node-resolve": "^7",
+    "rollup": "^1.20",
+    "rollup-plugin-livereload": "^1",
+    "rollup-plugin-postcss": "^2",
+    "rollup-plugin-sourcemaps": "^0.4",
+    "rollup-plugin-svelte": "^5",
+    "rollup-plugin-terser": "^5",
+    "sirv-cli": "^0.4"
   },
   "private": true
 }

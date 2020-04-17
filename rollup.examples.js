@@ -19,11 +19,11 @@ export default {
         'demo': 'examples/demo/src/main.js',
         'events': 'examples/events/src/main.js',
         'hello-world': 'examples/hello-world/src/main.js',
-        'viewer': 'examples/viewer/index.js'
+        'viewer': 'examples/viewer/main.js'
     },
     output: {
         chunkFileNames: 'build/[name].js',
-        entryFileNames: '[name]/build.js',
+        entryFileNames: '[name]/build/bundle.js',
         sourcemap: true,
         name: 'app',
         dir: 'out'
@@ -35,7 +35,7 @@ export default {
     plugins: [
         postcss(),
         json (),
-        image({limit: 100000}),
+        image(),
         markdown(),
         sourcemaps(),
 
