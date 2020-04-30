@@ -9,24 +9,27 @@ import * as pages from './examples.js';
 import readme from '../demo/README.md';
 import logo from './svelte.svg';
 import pkg from '../../package.json';
+import Dynamic from './dynamic.svelte';
 
 
 let framework = 'Svelte',
     container = document.getElementById('app');
 
+container.innerHTML = '';
+
+let dynamic = new Dynamic({
+    target: container
+});
+
 
 function mount(component, props){
-
-    // ???
+    dynamic.$set({props});
 }
 
 
 function clean(){
-    container.innerHTML = '';
+    dynamic.$set({props: undefined});
 }
-
-
-container.innerHTML = '';
 
 
 const viewer = new Viewer({

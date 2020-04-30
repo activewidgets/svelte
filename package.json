@@ -28,7 +28,7 @@
     "svelte": "^3.15"
   },
   "devDependencies": {
-    "@activewidgets/examples": "0.0.7",
+    "@activewidgets/examples": "0.0.8",
     "@activewidgets/options": "3.0.2",
     "@activewidgets/puppeteer": "0.0.4",
     "@activewidgets/testing": "0.0.3",
