@@ -1,6 +1,6 @@
 {
   "name": "@activewidgets/svelte",
-  "version": "3.0.3",
+  "version": "3.0.4",
   "description": "Datagrid component for Svelte",
   "author": "ActiveWidgets SARL",
   "license": "MIT",
@@ -21,15 +21,15 @@
     "test": "npm run output && jest"
   },
   "dependencies": {
-    "@activewidgets/datagrid": "3.0.3",
-    "@activewidgets/frameworks": "3.0.3"
+    "@activewidgets/datagrid": "3.0.4",
+    "@activewidgets/frameworks": "3.0.4"
   },
   "peerDependencies": {
     "svelte": "^3.15"
   },
   "devDependencies": {
     "@activewidgets/examples": "0.0.9",
-    "@activewidgets/options": "3.0.3",
+    "@activewidgets/options": "3.0.4",
     "@activewidgets/puppeteer": "0.0.4",
     "@activewidgets/testing": "0.0.3",
     "@babel/core": "^7",
