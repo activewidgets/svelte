@@ -21,5 +21,5 @@ Please note that you have to use `event.detail` property to access the event dat
 
 Read more:
 
-- [Get started](https://docs.activewidgets.com/guide/starting/svelte/#user-events)
+- [Svelte Datagrid - Get started](https://docs.activewidgets.com/guide/env/svelte/#user-events)
 - [API - mouse event](https://docs.activewidgets.com/api/datagrid/mouse-event/)
