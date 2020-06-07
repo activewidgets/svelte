@@ -7,3 +7,15 @@
   from = "/examples/*"
   to = "/index.html"
   status = 200
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    access-control-allow-origin = "*"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    cache-control = '''
+    public,
+    max-age=14400'''
