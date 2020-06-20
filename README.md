@@ -7,7 +7,7 @@
 [![Github issues](https://img.shields.io/github/issues/activewidgets/svelte)](https://github.com/activewidgets/svelte/issues "See Github issues")
 [![Github repo](https://img.shields.io/github/stars/activewidgets/svelte?label=GitHub&style=social)](https://github.com/activewidgets/svelte "Open Github repo")
 
-ActiveWidgets is a multi-framework UI component library. This package provides **datagrid component** for **Svelte**.
+ActiveWidgets is a multi-framework UI component library. This package provides [virtualized datagrid component for Svelte](https://activewidgets.com/svelte/data-grid/).
 
 [Live demo](https://svelte.activewidgets.com) / [Developer guide](https://docs.activewidgets.com/guide/) / [API reference](https://docs.activewidgets.com/api/)
 

@@ -76,12 +76,22 @@
     "url": "git+https://github.com/activewidgets/svelte.git"
   },
   "keywords": [
-    "activewidgets",
+    "svelte",
     "datagrid",
-    "svelte"
+    "datatable",
+    "virtualized",
+    "scrolling",
+    "grid",
+    "table",
+    "virtual",
+    "data-grid",
+    "data-table",
+    "svelte-data-grid",
+    "svelte-data-table",
+    "activewidgets"
   ],
   "bugs": {
     "url": "https://github.com/activewidgets/svelte/issues"
   },
-  "homepage": "https://activewidgets.com"
+  "homepage": "https://activewidgets.com/svelte/data-grid/"
 }
