@@ -27,4 +27,4 @@ Thats all!
 
 Read more:
 
- - [Svelte Datagrid - Get started](https://docs.activewidgets.com/guide/env/svelte/)
+ - [Svelte Datagrid - Get started](https://activewidgets.com/guide/env/svelte/)

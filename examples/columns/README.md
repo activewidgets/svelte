@@ -29,10 +29,10 @@ const rows = northwind.customers;
 <Datagrid {columns} {rows} />
 ```
 
-Assign an array of column descriptor objects to the [columns](https://docs.activewidgets.com/api/datagrid/columns/) property.
+Assign an array of column descriptor objects to the [columns](https://activewidgets.com/api/datagrid/columns/) property.
 
 Read more:
 
-- [Svelte Datagrid - Get started](https://docs.activewidgets.com/guide/env/svelte/#data-properties)
-- [API - columns](https://docs.activewidgets.com/api/datagrid/columns/)
-- [API - rows](https://docs.activewidgets.com/api/datagrid/rows/)
+- [Svelte Datagrid - Get started](https://activewidgets.com/guide/env/svelte/#data-properties)
+- [API - columns](https://activewidgets.com/api/datagrid/columns/)
+- [API - rows](https://activewidgets.com/api/datagrid/rows/)

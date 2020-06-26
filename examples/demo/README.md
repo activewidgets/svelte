@@ -14,7 +14,7 @@ This is a simple demo showing some of the features of ActiveWidgets/Svelte datag
 - International number/date formats
 - Custom column types (presets)
 
-[Svelte Datagrid - Get started](https://docs.activewidgets.com/guide/env/svelte/)
+[Svelte Datagrid - Get started](https://activewidgets.com/guide/env/svelte/)
 
 ### Virtualized scrolling
 
@@ -134,5 +134,5 @@ like popups, overlays, gantt charts, schedulers etc.
 
 Read more:
 
-- [Svelte Datagrid - Get started](https://docs.activewidgets.com/guide/env/svelte/)
-- [API Reference](https://docs.activewidgets.com/api/)
+- [Svelte Datagrid - Get started](https://activewidgets.com/guide/env/svelte/)
+- [API Reference](https://activewidgets.com/api/)

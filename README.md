@@ -9,7 +9,7 @@
 
 ActiveWidgets is a multi-framework UI component library. This package provides [virtualized datagrid component for Svelte](https://activewidgets.com/svelte/data-grid/).
 
-[Live demo](https://svelte.activewidgets.com) / [Developer guide](https://docs.activewidgets.com/guide/) / [API reference](https://docs.activewidgets.com/api/)
+[Live demo](https://svelte.activewidgets.com) / [Developer guide](https://activewidgets.com/guide/) / [API reference](https://activewidgets.com/api/)
 
 [![Datagrid demo](https://cdn.activewidgets.com/assets/screens/demo.png)](https://svelte.activewidgets.com)
 
@@ -109,8 +109,8 @@ function onMouse({row}){
 ## More info
 
 - [Live demo](https://svelte.activewidgets.com) 
-- [Developer guide](https://docs.activewidgets.com/guide/) 
-- [API reference](https://docs.activewidgets.com/api/)
+- [Developer guide](https://activewidgets.com/guide/) 
+- [API reference](https://activewidgets.com/api/)
 - [Licensing](https://activewidgets.com/licenses/)
 - [Support forum](https://activewidgets.com/messages/)
 
