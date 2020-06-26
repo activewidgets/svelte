@@ -1,0 +1,29 @@
+{
+  "name": "svelte-performance",
+  "version": "1.0.0",
+  "description": "Performance - ActiveWidgets/Svelte",
+  "license": "MIT",
+  "main": "src/main.js",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "start": "rollup -c && sirv"
+  },
+  "dependencies": {
+    "@activewidgets/examples": "*",
+    "@activewidgets/svelte": "^3",
+    "svelte": "^3.15"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^11",
+    "@rollup/plugin-node-resolve": "^7",
+    "rollup": "^1.20",
+    "rollup-plugin-livereload": "^1",
+    "rollup-plugin-postcss": "^2",
+    "rollup-plugin-sourcemaps": "^0.4",
+    "rollup-plugin-svelte": "^5",
+    "rollup-plugin-terser": "^5",
+    "sirv-cli": "^0.4"
+  },
+  "private": true
+}

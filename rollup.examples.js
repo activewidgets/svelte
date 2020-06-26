@@ -19,6 +19,7 @@ export default {
         'demo': 'examples/demo/src/main.js',
         'events': 'examples/events/src/main.js',
         'hello-world': 'examples/hello-world/src/main.js',
+        'performance': 'examples/performance/src/main.js',
         'viewer': 'examples/viewer/main.js'
     },
     output: {
