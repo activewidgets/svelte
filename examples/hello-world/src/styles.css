@@ -9,6 +9,10 @@ body {
     font: 14px/1.2143 'Segoe UI', 'Avenir', 'Helvetica Neue', 'Tahoma', sans-serif;
 }
 
+@media (max-width: 899px) {
+    body { margin: 20px; }
+}
+
 .ax-datagrid {
     max-height: 80px;
 }
