@@ -1,6 +1,6 @@
 
 import resolve from '@rollup/plugin-node-resolve';
-import babel from 'rollup-plugin-babel';
+import babel from '@rollup/plugin-babel';
 import postcss from 'rollup-plugin-postcss';
 import sourcemaps from 'rollup-plugin-sourcemaps';
 import {terser} from 'rollup-plugin-terser';
@@ -47,7 +47,7 @@ function keepBanner(node, comment){
 
 let plugins = [
     postcss({
-        extract: 'dist/ax.css',
+        extract: 'ax.css',
         sourceMap: true
     }),
     sourcemaps(),

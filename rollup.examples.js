@@ -1,10 +1,10 @@
 import resolve from '@rollup/plugin-node-resolve';
 import alias from '@rollup/plugin-alias';
+import commonjs from '@rollup/plugin-commonjs';
 import json from '@rollup/plugin-json';
 import svelte from 'rollup-plugin-svelte';
 import copy from 'rollup-plugin-copy';
 import image from 'rollup-plugin-img';
-import commonjs from 'rollup-plugin-commonjs';
 import livereload from 'rollup-plugin-livereload';
 import markdown from 'rollup-plugin-md';
 import postcss from 'rollup-plugin-postcss';
@@ -85,7 +85,7 @@ function serve() {
                     shell: true
                 });
 
-                require('opn')('http://localhost');
+                require('open')('http://localhost');
             }
         }
     };
