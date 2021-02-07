@@ -1,0 +1,3 @@
+[submodule "test/options"]
+	path = test/options
+	url = git@github.com:activewidgets/options.git

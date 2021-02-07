@@ -54,6 +54,7 @@ let plugins = [
     resolve(),
     babel({
         babelrc: false,
+        babelHelpers: 'bundled',
         exclude: 'node_modules/**',
         presets: [["@babel/env", {targets: {ie: 11}}]]
     }),

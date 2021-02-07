@@ -30,8 +30,8 @@
   "devDependencies": {
     "@activewidgets/examples": "0.0.10",
     "@activewidgets/options": "3.0.7",
-    "@activewidgets/puppeteer": "0.0.4",
-    "@activewidgets/testing": "0.0.3",
+    "@activewidgets/puppeteer": "0.0.5",
+    "@activewidgets/testing": "0.0.4",
     "@babel/core": "^7",
     "@babel/preset-env": "^7",
     "@rollup/plugin-alias": "^3",
@@ -63,11 +63,17 @@
         "moduleNameMapper": {
           "@activewidgets/components": "<rootDir>/js",
           "@activewidgets/testing": "<rootDir>/test/adapter/svelte.js"
-        }
+        },
+        "testMatch": [
+          "<rootDir>/test/options/*/unit.js"
+        ]
       },
       {
         "displayName": "Visual",
-        "preset": "@activewidgets/puppeteer"
+        "preset": "@activewidgets/puppeteer",
+        "testMatch": [
+          "<rootDir>/test/visual/**/*.js"
+        ]
       }
     ]
   },
