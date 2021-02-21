@@ -4,4 +4,4 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import '@activewidgets/datagrid/css';
+import '@activewidgets/datagrid/dist/datagrid.css';
