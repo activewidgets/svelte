@@ -47,7 +47,7 @@
     "rollup-plugin-terser": "^7",
     "style-inject": "^0.3",
     "svelte": "^3.15",
-    "vite": "^2.0.0-beta.70"
+    "vite": "^2"
   },
   "jest": {
     "projects": [
